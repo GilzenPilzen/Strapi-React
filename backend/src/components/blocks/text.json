@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_texts",
+  "info": {
+    "displayName": "Text",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "Body": {
+      "type": "blocks"
+    },
+    "Check": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}
