@@ -23,7 +23,8 @@
     "blocks": {
       "type": "dynamiczone",
       "components": [
-        "blocks.text"
+        "blocks.text",
+        "blocks.media-text"
       ]
     }
   }

@@ -16,6 +16,11 @@
       "required": true,
       "unique": true
     },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
     "Body": {
       "type": "blocks",
       "required": true

@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 
-function RichText({block}) {
+
+function RichText({body}) {
     
     return (
-        <>
+        <div className="textwrapper">
             {
-                block.Body.map((el, i) => {
+                body.map((el, i) => {
 
                     console.log(el)
                     return el.children.map((child, j) => {
@@ -14,7 +15,7 @@ function RichText({block}) {
                             return <p key={`${i}-${j}`}>{child.text}</p>
                         }else if(child.type === "link"){
                             console.log(child)
-                            return <Link key={`${i}-${j}`} to={child.url}>{child.children[0].text}</Link>
+                            return <Link key={`${i}-${j}`} href={child.url}>{child.children[0].text}</Link>
                         }else {
                             return null;
                         }
@@ -22,7 +23,7 @@ function RichText({block}) {
                     })
                 })
             }
-        </>
+        </div>
     )
 }
 

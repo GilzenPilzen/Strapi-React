@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_media_texts",
+  "info": {
+    "displayName": "Media - Text"
+  },
+  "options": {},
+  "attributes": {
+    "Body": {
+      "type": "blocks"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  },
+  "config": {}
+}
